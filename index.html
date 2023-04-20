@@ -1,94 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Angela's Portfolio</title>
-  <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
-  <style>
-    /* Customize the font and colors */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    /* Style the h1 */
-    h1 {
-      font-size: 36px;
-      text-align: center;
-      margin: 40px 0;
-      text-shadow: 2px 2px 2px #ccc;
-    }
-
-    /* Style the h2 */
-    h2 {
-      font-size: 24px;
-      text-align: center;
-      margin: 20px 0;
-      font-weight: normal;
-    }
-
-    /* Style the hr */
-    hr {
-      border: none;
-      height: 2px;
-      /* Add a gradient effect */
-      background: linear-gradient(to right, #eee, #333, #eee);
-      margin: 40px 0;
-    }
-
-    /* Style the navigation links */
-    a {
-      display: inline-block;
-      margin: 0 10px;
-      text-decoration: none;
-      color: #666;
-      font-size: 18px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      transition: all ease-in-out 0.2s;
-    }
-
-    /* Add hover effect to the navigation links */
-    a:hover {
-      background-color: #333;
-      color: #fff;
-    }
-  </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
 </head>
-<body>
-  <h1>Angela Yu's Portfolio</h1>
-  <h2>I'm a Web Developer</h2>
-  <hr />
 
-  <div class="col-sm-6">
-    <!-- Movie Ranking Card -->
-    <div class="row-sm-6">
-      <div class="card">
-        <img class="card-img-top" src="./assets/images/movie-ranking.png" height="200" alt="movie ranking project preview">
-        <div class="card-body">
-          <h3 class="card-title"><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
+<body class="bg-gray-100">
+    <header class="bg-white">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between">
+                <a href="#" class="text-gray-800 font-bold text-lg">My Portfolio</a>
+                <ul class="flex space-x-4">
+                    <li>
+                        <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-600 hover:text-gray-800">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    </div>
-
-    <!-- Birthday Invite Card -->
-    <div class="row-sm-6">
-      <div class="card">
-        <img class="card-img-top" src="./assets/images/birthday-invite.png" height="200" alt="birthday invite project preview">
-        <div class="card-body">
-          <h3 class="card-title"><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <hr />
-
-  <a href="./public/about.html">About Me</a>
-  <a href="./public/contact.html">Contact Me</a>
-
-  <script src="path/to/bootstrap/js/bootstrap.min.js"></script>
+    </header>
+    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <section class="mb-16">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to My Portfolio</h1>
+            <p class="text-lg text-gray-600">I'm a web developer based in [Your Location], specializing in [Your Area of
+                Expertise]. I have [Number] years of experience in designing and building modern, responsive websites
+                and web applications. Take a look at my portfolio below to see some of my recent projects.</p>
+        </section>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white shadow-lg rounded-md overflow-hidden">
+                <img class="w-full h-48 object-cover" src="/img/project1.jpg" alt="Project 1">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Project 1</h2>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt
+                        quam vitae ante elementum, nec finibus ex tincidunt.</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-md overflow-hidden">
+                <img class="w-full h-48 object-cover" src="/img/project2.jpg" alt="Project 2">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Project 2</h2>
+                    <p class="text-gray-600">Proin dictum lacus sed ullamcorper fermentum. Fusce consectetur augue sit
+                        amet libero rhoncus bibendum.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+        <footer class="bg-gray-900 py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-white">
+                        <h3 class="text-lg font-bold mb-4">About Me</h3>
+                        <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                            tincidunt quam vitae ante elementum, nec finibus ex tincidunt. Proin dictum lacus sed
+                            ullamcorper fermentum.</p>
+                    </div>
+                    <div class="text-white">
+                        <h3 class="text-lg font-bold mb-4">Contact Me</h3>
+                        <ul class="text-gray-400">
+                            <li>123 Main St</li>
+                            <li>My City, ST 12345</li>
+                            <li>(123) 456-7890</li>
+                            <li>email@example.com</li>
+                        </ul>
+                    </div>
+                    <div class="text-white">
+                        <h3 class="text-lg font-bold mb-4">Social Media</h3>
+                        <ul class="flex space-x-4">
+                            <li>
+                                <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook fa-lg"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-gray-400"><i class="fab fa-twitter fa-lg"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram fa-lg"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-gray-400"><i class="fab fa-linkedin fa-lg"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-white">
+                        <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                        <p class="text-gray-400 mb-4">Subscribe to my newsletter to receive updates about my latest
+                            projects and blog posts.</p>
+                        <form>
+                            <input type="email" placeholder="Email address" class="px-4 py-2 rounded-md w-full mb-4">
+                            <button type="submit"
+                                class="bg-blue-500 hover:bg-blue-400 text-white py-2 px-4 rounded-md">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <p class="text-gray-400">&copy; 2023 My Portfolio. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
 </body>
-</html>
